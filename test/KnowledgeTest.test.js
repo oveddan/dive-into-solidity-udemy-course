@@ -3,7 +3,7 @@ const { BigNumber } = require("ethers");
 const { parseEther, formatEther } = require("ethers/lib/utils");
 const { ethers, waffle } = require("hardhat");
 
-describe.only("Knowledge Test", function () {
+describe("Knowledge Test", function () {
   // Declaring outside of the tests to have access inside them
   let owner, addr1, addr2, addrs, lottery;
   let provider = waffle.provider;
